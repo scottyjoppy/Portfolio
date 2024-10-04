@@ -1,10 +1,12 @@
-const title = document.querySelectorAll('.title');
-const pageLink = document.querySelectorAll('.page-link');
+const titles = document.querySelectorAll('.title');
+const pageLinks = document.querySelectorAll('.link-container');
 
-title.addEventListener('mouseenter', function() {
-    pageLink.classList.add('visible');
-    alert('Hello, World!');
-});
+titles.forEach(title => {
+    title.addEventListener('mouseenter', function() {
+        pageLinks[0].classList.add('visible');
+    });    
+})
+
 
 function visibilitySwitch () {
     pageLinks.forEach(link => {
